@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador de clics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #contador {
+            font-size: 48px;
+            margin: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contador de Clics</h1>
+    <p>Haz clic en el botón para incrementar el contador.</p>
+    
+    <!-- Aquí se muestra el contador -->
+    <div id="contador">0</div>
+
+    <!-- Botón para incrementar el contador -->
+    <button onclick="incrementarContador()">Añadir número</button>
+
+    <script>
+        let contador = 0;
+
+        // Función para incrementar el contador
+        function incrementarContador() {
+            contador++;
+            document.getElementById("contador").innerText = contador;
+        }
+    </script>
+
+</body>
+</html>
